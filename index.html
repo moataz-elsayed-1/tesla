@@ -144,9 +144,10 @@ footer{background:#041126;color:#91a8bf;padding:24px 0}.footer-row{display:flex;
  </div>
 </section>
 </main>
-<footer><div class="wrap footer-row"><div class="footer-brand">TESLA <span style="color:var(--cyan)">POWER</span></div><div>حلول متكاملة للتوريدات الكهربائية</div><div>© <span id="year"></span> TESLA POWER. All rights reserved</div><div class="footer-moataz">Developed by<a href="https://moataz.pages.dev/" class="dev-link"
-                    target="_blank"><strong> Moataz ElSayed</strong></div></div></footer>
 <button class="backtop" id="backtop" aria-label="العودة للأعلى">↑</button>
+<footer><div class="wrap footer-row"><div class="footer-brand">TESLA <span style="color:var(--cyan)">POWER</span></div><div>Developed by<a href="https://moataz.pages.dev/" class="dev-link"
+                    target="_blank"><strong> Moataz ElSayed</strong></div><div>حلول متكاملة للتوريدات الكهربائية</div><div>© <span id="year"></span> TESLA POWER. All rights reserved</div></div></footer>
+
 <script>
 const progress=document.getElementById('progress'),header=document.getElementById('header'),backtop=document.getElementById('backtop');
 function onScroll(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';header.classList.toggle('scrolled',scrollY>30);backtop.classList.toggle('show',scrollY>500)}
