@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071a36">
+<title>TESLA POWER | Company Profile</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--navy:#071a36;--navy2:#0b2c53;--blue:#0879c9;--cyan:#22d5c0;--ice:#eaf6fa;--ink:#10243b;--muted:#64758a;--white:#fff;--line:rgba(9,36,67,.12);--shadow:0 24px 70px rgba(5,28,55,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;font-family:'Cairo',sans-serif;background:#f6fafc;color:var(--ink);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.en{font-family:'Manrope',sans-serif;direction:ltr;unicode-bidi:embed}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.topline{height:4px;background:linear-gradient(90deg,var(--cyan),var(--blue),var(--cyan));position:fixed;top:0;left:0;z-index:1000;width:0;box-shadow:0 0 14px #22d5c0}
+header{position:fixed;z-index:100;top:4px;left:0;right:0;transition:.35s;background:rgba(5,22,46,.55);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.1);color:white}
+header.scrolled{background:rgba(5,22,46,.94);box-shadow:0 8px 30px #06172a30}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:900;letter-spacing:1.5px;font-size:20px}.brandmark{width:39px;height:39px;border:1px solid #25d6c0;border-radius:12px;display:grid;place-items:center;color:var(--cyan);font-size:19px;box-shadow:inset 0 0 20px #22d5c022,0 0 20px #22d5c022}.navlinks{display:flex;gap:25px;align-items:center;font-size:13px;color:#dce8f4}.navlinks a{transition:.2s}.navlinks a:hover{color:var(--cyan)}.nav-cta{padding:10px 18px;border-radius:30px;background:var(--cyan);color:#04213b;font-weight:800;font-size:13px}.menu-btn{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 32%,#0a4b79 0%,transparent 35%),radial-gradient(ellipse at 12% 88%,#075b71 0%,transparent 32%),linear-gradient(125deg,#041329,#08274b 58%,#061a35);color:white;padding:140px 0 90px}
+.hero:before{content:"";position:absolute;inset:0;opacity:.22;background-image:linear-gradient(rgba(69,194,223,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(69,194,223,.18) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(90deg,transparent,#000)}
+.orbit{position:absolute;width:580px;height:580px;border:1px solid #25d6c044;border-radius:50%;left:-120px;top:10%;animation:spin 30s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #168edb55;border-radius:50%;inset:45px}.orbit:after{inset:100px;border-color:#25d6c044}.orb-dot{position:absolute;width:12px;height:12px;background:var(--cyan);border-radius:50%;top:78px;right:80px;box-shadow:0 0 25px var(--cyan)}
+@keyframes spin{to{transform:rotate(360deg)}}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;position:relative;z-index:2}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-family:Manrope,sans-serif;font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.eyebrow:before{content:"";width:30px;height:1px;background:var(--cyan)}h1{font-family:Manrope,sans-serif;font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-3px;margin:25px 0 18px;font-weight:900}h1 span{display:block;color:var(--cyan)}.hero-sub{font-size:clamp(18px,2vw,23px);font-weight:700;color:#dceaf7;margin:0 0 18px}.hero-copy{color:#b5c7d9;line-height:2;font-size:15px;max-width:590px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:8px;font-weight:800;font-size:14px;transition:.3s;border:1px solid transparent}.btn-primary{background:var(--cyan);color:#05203a;box-shadow:0 10px 30px #22d5c02c}.btn-primary:hover{transform:translateY(-4px);box-shadow:0 16px 35px #22d5c044}.btn-outline{border-color:#ffffff50;color:white}.btn-outline:hover{background:#ffffff12;border-color:var(--cyan)}
+.hero-art{height:440px;position:relative;display:grid;place-items:center}.power-core{width:min(330px,75vw);aspect-ratio:1;border-radius:50%;border:1px solid #22d5c066;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#0c5780 0,#0b3158 42%,#08203f 68%,transparent 69%);box-shadow:0 0 90px #0b9cc033,inset 0 0 50px #22d5c01c;animation:pulse 4s ease-in-out infinite}.power-core:before,.power-core:after{content:"";position:absolute;inset:-28px;border:1px dashed #22d5c077;border-radius:50%;animation:spin 24s linear infinite}.power-core:after{inset:-60px;border-style:solid;border-color:#1486c944;animation-direction:reverse;animation-duration:38s}.bolt{font-size:115px;color:var(--cyan);filter:drop-shadow(0 0 25px #22d5c0aa);line-height:1}.core-label{position:absolute;bottom:38px;font:800 12px Manrope,sans-serif;letter-spacing:4px;color:#d8f9f5}@keyframes pulse{50%{transform:scale(1.035);filter:brightness(1.15)}}.float-tag{position:absolute;padding:12px 16px;border:1px solid #ffffff25;background:#09294de0;backdrop-filter:blur(12px);border-radius:10px;font-size:12px;color:#e6f8ff;box-shadow:0 12px 35px #00112655;animation:float 5s ease-in-out infinite}.float-tag b{color:var(--cyan);font-family:Manrope,sans-serif;display:block;font-size:13px;margin-bottom:3px}.tag-one{top:42px;right:0}.tag-two{bottom:56px;left:0;animation-delay:-2s}.tag-three{top:46%;left:-18px;animation-delay:-3s}@keyframes float{50%{transform:translateY(-12px)}}
+.section{padding:112px 0;position:relative}.section.light{background:#fff}.section.soft{background:#f2f8fb}.section.dark{background:linear-gradient(135deg,#06172f,#0a2a4e);color:white;overflow:hidden}.section-head{margin-bottom:48px;max-width:720px}.section-kicker{font:800 11px Manrope,sans-serif;letter-spacing:3px;color:#0786c8;text-transform:uppercase;display:block;margin-bottom:12px}.dark .section-kicker{color:var(--cyan)}h2{font-size:clamp(30px,4vw,46px);line-height:1.3;margin:0 0 12px;font-weight:900;color:var(--navy)}.dark h2{color:white}.section-head p{color:var(--muted);line-height:2;margin:0;font-size:15px}.dark .section-head p{color:#afc2d6}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.about-copy{font-size:17px;line-height:2.2;color:#465a70}.about-visual{min-height:340px;border-radius:20px;background:linear-gradient(145deg,#092343,#0a4d76);position:relative;overflow:hidden;display:grid;place-items:center;box-shadow:var(--shadow)}.about-visual:before{content:"";position:absolute;width:340px;height:340px;border:1px solid #22d5c055;border-radius:50%;box-shadow:0 0 0 35px #22d5c010,0 0 0 70px #22d5c009}.about-visual svg{width:180px;position:relative;z-index:1;filter:drop-shadow(0 0 18px #22d5c055)}.visual-caption{position:absolute;bottom:25px;left:30px;color:#d8f5f3;font:800 12px Manrope,sans-serif;letter-spacing:3px}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:20px}.value-card{padding:34px;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:0 12px 35px #082b4b08;position:relative;overflow:hidden;transition:.35s}.value-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.value-card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:#22d5c012;left:-45px;bottom:-55px}.value-icon{width:48px;height:48px;border-radius:13px;background:#e4f8f6;color:#078e91;display:grid;place-items:center;font-size:22px;margin-bottom:22px}.value-card h3{font-size:22px;margin:0 0 12px;color:var(--navy)}.value-card p{margin:0;color:#617286;line-height:2}
+.track-record{background:linear-gradient(120deg,#06172f,#0a3158);color:white;position:relative;overflow:hidden}.track-record:after{content:"TESLA";position:absolute;left:3%;bottom:-75px;font:900 180px Manrope,sans-serif;color:#ffffff06;pointer-events:none}.track-intro{max-width:720px;color:#b7cadb;line-height:2;margin-bottom:35px}.client-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative;z-index:1}.client-card{min-height:115px;padding:20px 14px;border:1px solid #ffffff20;border-radius:12px;background:#ffffff08;display:flex;align-items:center;justify-content:center;text-align:center;font-size:15px;font-weight:800;transition:.3s}.client-card:hover{background:#22d5c016;border-color:#22d5c088;transform:translateY(-5px)}.client-card small{display:block;color:var(--cyan);font:700 10px Manrope,sans-serif;margin-top:7px}
+.services-intro{max-width:760px;color:#60758a;line-height:2;margin-top:-20px;margin-bottom:35px}.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.service{display:flex;gap:17px;padding:23px 22px;background:white;border:1px solid #e2ebf1;border-radius:13px;transition:.3s;min-height:125px}.service:hover{border-color:#81d8d0;box-shadow:0 15px 35px #0b385410;transform:translateY(-4px)}.service-no{flex:0 0 42px;height:42px;border-radius:11px;background:#e9f7f8;color:#078b9c;display:grid;place-items:center;font:800 13px Manrope,sans-serif}.service h3{margin:0 0 7px;font-size:16px;color:#0a2a4b}.service p{margin:0;color:#64778a;line-height:1.9;font-size:13px}
+.clients-section{background:#fff}.client-logos{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.logo-tile{border:1px solid #e4edf2;border-radius:14px;min-height:125px;display:grid;place-items:center;text-align:center;padding:20px;color:#153653;font-weight:800;transition:.3s;background:linear-gradient(145deg,#fff,#f8fbfd)}.logo-tile:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#9edfd9}.logo-tile .en{font-size:16px;color:#0879c9;font-weight:800}.logo-tile span{font-size:16px}
+.contact{position:relative}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.contact-copy{color:#b6c9dc;line-height:2}.contact-items{display:grid;gap:13px}.contact-item{display:flex;gap:16px;align-items:center;padding:18px 20px;background:#ffffff0b;border:1px solid #ffffff1c;border-radius:12px;transition:.25s}.contact-item:hover{border-color:#22d5c077;background:#22d5c00d}.contact-icon{width:44px;height:44px;flex:0 0 44px;border-radius:12px;background:#22d5c019;color:var(--cyan);display:grid;place-items:center;font-size:19px}.contact-item small{display:block;color:#8fa8c0;font-size:11px;margin-bottom:3px}.contact-item strong{font-size:15px;direction:ltr;unicode-bidi:embed;display:block}.contact-item.address strong{direction:rtl;text-align:right}
+footer{background:#041126;color:#91a8bf;padding:24px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12px}.footer-brand{font:900 14px Manrope,sans-serif;color:#e8f4ff;letter-spacing:2px}.backtop{position:fixed;bottom:24px;left:24px;width:46px;height:46px;border:0;border-radius:50%;background:var(--cyan);color:#05203a;font-size:20px;cursor:pointer;box-shadow:0 8px 25px #001b2c30;opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;z-index:80}.backtop.show{opacity:1;pointer-events:auto;transform:none}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:none}.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}.delay3{transition-delay:.36s}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;right:0;left:0;background:#061a34;padding:22px;flex-direction:column;align-items:stretch;gap:17px}.navlinks.open{display:flex}.menu-btn{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding-top:130px}.hero-art{height:340px;order:-1}.power-core{width:230px}.bolt{font-size:85px}.tag-one{right:5%}.tag-two{left:5%}.tag-three{left:3%}.client-grid,.client-logos{grid-template-columns:repeat(2,1fr)}.section{padding:82px 0}.contact-grid{gap:30px}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.nav{height:66px}.brand{font-size:17px}.brandmark{width:34px;height:34px}.hero-grid{gap:15px}.hero-art{height:290px}.power-core{width:190px}.bolt{font-size:72px}.float-tag{font-size:10px;padding:9px 11px}.tag-three{left:-5px}.tag-one{top:15px}.tag-two{bottom:20px}.hero-copy{font-size:14px}.hero-actions .btn{width:100%}.values,.services-grid{grid-template-columns:1fr}.client-grid,.client-logos{grid-template-columns:1fr 1fr}.client-card{font-size:13px;min-height:100px}.logo-tile{min-height:100px;padding:12px}.logo-tile span{font-size:13px}.service{padding:18px 15px}.service p{font-size:12px}.footer-row{flex-direction:column;text-align:center}.section-head{margin-bottom:32px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="topline" id="progress"></div>
+<header id="header"><div class="wrap nav">
+  <a class="brand" href="#home"><span class="brandmark">ϟ</span><span>TESLA <span style="color:var(--cyan)">POWER</span></span></a>
+  <nav class="navlinks" id="navlinks">
+    <a href="#about">من نحن</a><a href="#vision">رؤيتنا ورسالتنا</a><a href="#track">سابقة الأعمال</a><a href="#services">الخدمات</a><a href="#clients">عملاؤنا</a><a href="#contact">تواصل معنا</a>
+  </nav>
+  <a class="nav-cta" href="#contact">تواصل معنا ↗</a><button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home">
+  <div class="orbit"><i class="orb-dot"></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="eyebrow">POWERING YOUR PROJECTS</div>
+      <h1>TESLA <span>POWER</span></h1>
+      <p class="hero-sub">COMPANY PROFILE</p>
+      <p class="hero-copy">حلول متكاملة للتوريدات الكهربائية، تجمع بين الجودة والموثوقية والأسعار التنافسية لتلبية احتياجات عملائنا ومشروعاتهم.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#about">اكتشف الشركة <span>↓</span></a><a class="btn btn-outline" href="#contact">تواصل معنا <span>↗</span></a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="power-core"><div class="bolt">ϟ</div><div class="core-label">ENERGY • QUALITY • TRUST</div></div>
+      <div class="float-tag tag-one"><b>POWER SOLUTIONS</b>توريدات كهربائية متكاملة</div>
+      <div class="float-tag tag-two"><b>QUALITY FIRST</b>جودة وموثوقية</div>
+      <div class="float-tag tag-three"><b>TESLA POWER</b>شريك مشروعاتك</div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="about">
+ <div class="wrap about-grid">
+  <div class="reveal">
+   <span class="section-kicker">WHO WE ARE</span><h2>من نحن؟</h2>
+   <p class="about-copy">شركة تسلا باور للتوريدات الكهربائية، متخصصون في تقديم حلول التوريدات الكهربائية المتكاملة. نهدف إلى تلبية احتياجات عملائنا المتنوعة من خلال توفير منتجات وخدمات عالية الجودة بأسعار تنافسية. ونؤمن بأهمية بناء علاقات طويلة الأمد مع عملائنا.</p>
+  </div>
+  <div class="about-visual reveal delay1">
+   <svg viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M124 12L54 119H103L87 208L169 91H119L124 12Z" fill="#22D5C0" stroke="#B9FFF5" stroke-width="3"/><circle cx="110" cy="110" r="96" stroke="#22D5C0" stroke-opacity=".5" stroke-width="1.5"/><circle cx="110" cy="110" r="78" stroke="#42A8E8" stroke-opacity=".5" stroke-dasharray="4 8"/></svg>
+   <div class="visual-caption">ELECTRICAL SUPPLY SOLUTIONS</div>
+  </div>
+ </div>
+</section>
+
+<section class="section soft" id="vision">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="section-kicker">OUR DIRECTION</span><h2>رؤيتنا ورسالتنا</h2><p>نعمل على بناء علاقات طويلة الأمد من خلال حلول كهربائية موثوقة ومعايير عالية من الجودة والاحترافية.</p></div>
+  <div class="values">
+   <article class="value-card reveal"><div class="value-icon">◎</div><h3>رؤيتنا</h3><p>أن نصبح الخيار الأول لعملائنا في مجال التوريدات الكهربائية، من خلال تقديم حلول مبتكرة وموثوقة تلبي احتياجاتهم وتتجاوز توقعاتهم.</p></article>
+   <article class="value-card reveal delay1"><div class="value-icon">✧</div><h3>رسالتنا</h3><p>تقديم حلول للتوريدات الكهربائية متكاملة وعالية الجودة، بأسعار تنافسية، مع الالتزام بأعلى معايير الجودة والاحترافية، والحصول على ثقة عملائنا.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section track-record dark" id="track">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="section-kicker">OUR TRACK RECORD</span><h2>سابقة الأعمال التي أسندت لتسلا باور</h2></div>
+  <p class="track-intro reveal">قامت تسلا باور بتقديم خدمات توريد لأكثر من شركة رائدة، وهم:</p>
+  <div class="client-grid">
+   <div class="client-card reveal">شركة <span class="en">Suez International</span></div>
+   <div class="client-card reveal delay1">شركة حديد عز</div>
+   <div class="client-card reveal delay2">شركة مودرن ايجيبت</div>
+   <div class="client-card reveal delay3">شركة الشمس للمقاولات العمومية والتوريدات</div>
+   <div class="client-card reveal">شركة المقاولون العرب<small>إدارة الأعمال الكهربائية</small></div>
+   <div class="client-card reveal delay1">شركة المقاولون العرب<small>إدارة الكباري للإنشاءات التخصصية</small></div>
+   <div class="client-card reveal delay2">شركة المقاولون العرب<small>إدارة ترسانة المعصرة</small></div>
+   <div class="client-card reveal delay3">شركة المقاولون العرب<small>التجهيزات العاجلة</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="section soft" id="services">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="section-kicker">WHAT WE SUPPLY</span><h2>مجالات العمل والخدمات</h2></div>
+  <p class="services-intro reveal">نوفر مجموعة متنوعة من مستلزمات ومكونات البنية التحتية الكهربائية، بمقاسات وماركات متعددة وفق احتياجات مواقع ومشروعات العملاء.</p>
+  <div class="services-grid">
+   <article class="service reveal"><div class="service-no">01</div><div><h3>قطاعات الكابلات النحاس والألومنيوم</h3><p>جميع القطاعات المعتمدة من قطاع 3×16 مم حتى 3×300+150 مم، سواء السعودي، الكابلات المصرية، كابلات مصر، كابلات الجيزة، السويدي هلال إنيرجيا، وما يماثلهم في الجودة، بأعلى خصم في السوق.</p></div></article>
+   <article class="service reveal delay1"><div class="service-no">02</div><div><h3>قطاعات الأسلاك المعزولة</h3><p>جميع قطاعات الأسلاك المعزولة (النحاس والألومنيوم)، سواء السعودي، الكابلات المصرية، كابلات مصر، كابلات الجيزة، السويدي هلال إنيرجيا، وما يماثلهم في الجودة، بأعلى خصم في السوق.</p></div></article>
+   <article class="service reveal"><div class="service-no">03</div><div><h3>كابلات الضغط المتوسط</h3><p>كابلات الضغط المتوسط بجميع قطاعاتها.</p></div></article>
+   <article class="service reveal delay1"><div class="service-no">04</div><div><h3>خراطيم الكهرباء</h3><p>جميع مقاسات خراطيم الكهرباء (عادي – فليكسبل – مقاوم للحريق)، سواء بيت الهندسة، مصطفى محمود، علاء الدين، نيو إيجيا أو ما يماثلهم في الجودة.</p></div></article>
+   <article class="service reveal"><div class="service-no">05</div><div><h3>كابلات التيار الخفيف</h3><p>كابلات الداتا، إنذار الحريق، أسلاك الدش، كابلات الكنترول، سلك التليفون، وسلك الكاميرات.</p></div></article>
+   <article class="service reveal delay1"><div class="service-no">06</div><div><h3>لوحات التوزيعات الكهربائية</h3><p>جميع أنواع ومقاسات لوحات التوزيعات الكهربائية للمواقع، بأعلى خامات السوق.</p></div></article>
+   <article class="service reveal"><div class="service-no">07</div><div><h3>القواطع ومكونات التحكم</h3><p>القواطع الأوتوماتيكية والأوفرلود والريلاي والكونتاكتورات من <span class="en">ABB / SCHNEIDER / HIMEL / ELSEWEDY / HAGER</span> وما يماثلهم في الجودة.</p></div></article>
+   <article class="service reveal delay1"><div class="service-no">08</div><div><h3>مواسير الكهرباء</h3><p>جميع أنواع مواسير الكهرباء وإكسسواراتها اللازمة للتركيب.</p></div></article>
+   <article class="service reveal"><div class="service-no">09</div><div><h3>حوامل الكابلات (الترايات)</h3><p>جميع مقاسات حوامل الكابلات (الترايات) وما يلزمها من إكسسوارات.</p></div></article>
+   <article class="service reveal delay1"><div class="service-no">10</div><div><h3>إكسسوارات اللوحات الكهربائية</h3><p>جميع أنواع إكسسوارات اللوحات الكهربائية من الأكواس والبارات النحاس والعوازل.</p></div></article>
+   <article class="service reveal"><div class="service-no">11</div><div><h3>الإضاءة والكشافات</h3><p>جميع أنواع كشافات الشوارع والكشافات الخارجية واللمبات، وكل ما يلزم الإضاءة بجميع الماركات المعتمدة.</p></div></article>
+   <article class="service reveal delay1"><div class="service-no">12</div><div><h3>إكسسوارات التشطيبات</h3><p>المفاتيح والأوشاش من جميع الماركات (ليجراند – بيتشينو – شنايدر – سانشي) وما يماثلهم في الجودة.</p></div></article>
+   <article class="service reveal"><div class="service-no">13</div><div><h3>العلب الأرضية وبرايز القوى</h3><p>جميع المقاسات من الماركات (ليجراند – شنايدر – جيوس – صيني) أو ما يماثلهم في الجودة.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section clients-section" id="clients">
+ <div class="wrap">
+  <div class="section-head reveal"><span class="section-kicker">TRUSTED PARTNERS</span><h2>عملاؤنا</h2><p>نفتخر بخدمة مجموعة واسعة من العملاء في مختلف القطاعات، بما في ذلك:</p></div>
+  <div class="client-logos">
+   <div class="logo-tile reveal"><span>شركة المقاولون العرب</span></div>
+   <div class="logo-tile reveal delay1"><span>شركة حديد عز للدرفلة</span></div>
+   <div class="logo-tile reveal delay2"><span>شركة باور جلاكسي</span></div>
+   <div class="logo-tile reveal delay3"><span class="en">Suez International</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section dark contact" id="contact">
+ <div class="wrap contact-grid">
+  <div class="reveal"><span class="section-kicker">LET'S CONNECT</span><h2>للتواصل معنا</h2><p class="contact-copy">يسعدنا تواصلكم معنا لمناقشة احتياجاتكم وتقديم أفضل العروض لتوريداتكم.</p><a class="btn btn-primary" href="mailto:teslapower.gs29@gmail.com">راسلنا الآن ↗</a></div>
+  <div class="contact-items reveal delay1">
+   <a class="contact-item address" href="https://maps.google.com/?q=ميدان+الأوبرا+مول+الأوبرا" target="_blank" rel="noopener"><span class="contact-icon">⌖</span><span><small>العنوان</small><strong>1 ميدان الأوبرا – مول الأوبرا – الدور الرابع</strong></span></a>
+   <a class="contact-item" href="tel:01006434685"><span class="contact-icon">☎</span><span><small>الهاتف</small><strong class="en">01006434685</strong></span></a>
+   <a class="contact-item" href="mailto:teslapower.gs29@gmail.com"><span class="contact-icon">✉</span><span><small>البريد الإلكتروني</small><strong class="en">teslapower.gs29@gmail.com</strong></span></a>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div class="footer-brand">TESLA <span style="color:var(--cyan)">POWER</span></div><div>حلول متكاملة للتوريدات الكهربائية</div><div>© <span id="year"></span> TESLA POWER. All rights reserved</div><div class="footer-moataz">Developed by<a href="https://moataz.pages.dev/" class="dev-link"
+                    target="_blank"><strong> Moataz ElSayed</strong></div></div></footer>
+<button class="backtop" id="backtop" aria-label="العودة للأعلى">↑</button>
+<script>
+const progress=document.getElementById('progress'),header=document.getElementById('header'),backtop=document.getElementById('backtop');
+function onScroll(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';header.classList.toggle('scrolled',scrollY>30);backtop.classList.toggle('show',scrollY>500)}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('backtop').addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const menu=document.getElementById('menuBtn'),links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+</script>
+</body>
+</html>
