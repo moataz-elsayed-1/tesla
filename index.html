@@ -35,6 +35,52 @@ footer{background:#041126;color:#91a8bf;padding:24px 0}.footer-row{flex-directio
 @media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;right:0;left:0;background:#061a34;padding:22px;flex-direction:column;align-items:stretch;gap:17px}.navlinks.open{display:flex}.menu-btn{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding-top:130px}.hero-art{height:340px;order:-1}.power-core{width:230px}.bolt{font-size:85px}.tag-one{right:5%}.tag-two{left:5%}.tag-three{left:3%}.client-card{flex-basis:calc(50% - 7px)}.logo-tile{flex-basis:calc(50% - 7.5px)}.section{padding:82px 0}.contact-grid{gap:30px}}
 @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.nav{height:66px}.brand{font-size:17px}.brandmark{height:38px}.hero-grid{gap:15px}.hero-art{height:290px}.power-core{width:190px}.bolt{font-size:72px}.float-tag{font-size:10px;padding:9px 11px}.tag-three{left:-5px}.tag-one{top:15px}.tag-two{bottom:20px}.hero-copy{font-size:14px}.hero-actions .btn{width:100%}.values,.services-grid{grid-template-columns:1fr}.client-card{flex-basis:calc(50% - 7px)}.contact-reg{grid-template-columns:1fr}.wa-float{bottom:18px;right:14px;width:54px;height:54px}.wa-float .wa-ic svg{width:29px;height:29px}.client-card{font-size:13px;min-height:100px}.logo-tile{min-height:100px;padding:12px}.logo-tile span{font-size:13px}.service{padding:18px 15px}.service p{font-size:12px}.footer-row{flex-direction:column;text-align:center}.section-head{margin-bottom:32px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+@media (max-width: 768px) {
+
+    .hero-text {
+        direction: ltr !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    .hero-text .eyebrow {
+        direction: ltr !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+
+    .hero-text h1,
+    .hero-text .hero-sub {
+        direction: ltr !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+
+    .hero-text .hero-copy {
+        direction: rtl !important;
+        text-align: right !important;
+        width: 100% !important;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .power-core {
+        transform: scale(0.80);
+        transform-origin: center center;
+    }
+
+    .power-core .bolt-img {
+        max-width: 50% !important;
+        height: auto;
+    }
+
+    .power-core .core-label {
+        font-size: 8px !important;
+        letter-spacing: 2px !important;
+    }
+
+}
 </style>
 </head>
 <body>
